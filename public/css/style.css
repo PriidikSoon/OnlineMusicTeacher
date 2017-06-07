@@ -1,0 +1,356 @@
+.blinkBorder{
+    border: 1px solid #0A0705 !important;
+    -webkit-box-shadow: 0px 0px 40px 10px #0A0705;
+    -moz-box-shadow: 0px 0px 40px 10px #0A0705;
+    box-shadow: 0px 0px 40px 10px #0A0705;
+}
+
+.metronomeBorder{
+    border: 1px solid #f5f8fa;
+    overflow: visible;
+}
+
+#metronomeBorderLeft{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+}
+#metronomeBorderRight{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+}
+#metronomeBorderTop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+}
+#metronomeBorderBottom{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+}
+
+#myCanvas{
+    width: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    border: 5px solid #f5f8fa;
+    min-height: 100%;
+}
+.panel-login {
+    border-color: #ccc;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+    color: #00415d;
+    background-color: #fff;
+    border-color: #fff;
+    text-align:center;
+}
+.panel-login>.panel-heading a{
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+    color: #029f5b;
+    font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    clear: both;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+    height: 45px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+    outline:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #ccc;
+}
+.btn-login {
+    background-color: #59B2E0;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+    color: #fff;
+    background-color: #53A3CD;
+    border-color: #53A3CD;
+}
+.forgot-password {
+    text-decoration: underline;
+    color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+    text-decoration: underline;
+    color: #666;
+}
+
+.btn-register {
+    background-color: #1CB94E;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+    color: #fff;
+    background-color: #1CA347;
+    border-color: #1CA347;
+}
+
+.colorBox {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.navigationWrapper{
+    float:left;
+    width:100%;
+    min-height:50px;
+    border-bottom: 2px solid white;
+}
+.navigation{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    float: none;
+    width: auto;
+    list-style: none;
+    display: inline-block;
+}
+.navigation ul li{
+    float: left;
+    width: auto;
+    margin-right: 60px;
+    position: relative;
+}
+.navigation ul li:last-child{
+    margin: 0;
+}
+.navigation ul li a{
+    float: left;
+    width: 100%;
+    color: #333;
+    padding: 16px 0;
+    font-size: 16px;
+    line-height: normal;
+    text-decoration:none;
+    box-sizing:border-box;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;      -webkit-transition:color 0.3s ease;
+    transition:color 0.3s ease;
+}
+.navigation .children {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    min-width: 240px;
+    background-color: #fff;
+    border: solid 1px #dbdbdb;
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+}
+.navigation ul li .children  {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-75deg);
+    transform: rotateX(-75deg);
+    visibility: hidden;
+}
+.navigation ul li:hover > .children  {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+}
+.navigation ul li .children .children{
+    left: 100%;
+    top: 0;
+}
+.navigation ul li.last .children{
+    right: 0;
+    left: auto;
+}
+.navigation ul li.last .children .children{
+    right: 100%;
+    left: auto;
+}
+.navigation ul li .children li{
+    float: left;
+    width: 100%;
+    margin:0;
+}
+.navigation ul li .children  a {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+    color: #333;
+    text-align: left;
+    line-height: 1.5em;
+    padding: 16px 30px;
+    letter-spacing: normal;
+    border-bottom: 1px solid #dbdbdb;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+.navigation ul li .children  a:hover{
+    color: #fff;
+    background-color:goldenrod;
+}
+.navigation ul li a:hover{
+    color:goldenrod;
+}
+
+.panel{
+    margin-top: 30px;
+}
+
+.panel-table .panel-body{
+    padding:0;
+}
+
+.panel-table .panel-body .table-bordered{
+    border-style: none;
+    margin:0;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:first-of-type {
+    /*text-align:center;*/
+    width: 100px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type {
+    border-right: 0px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type {
+    border-left: 0px;
+}
+
+.panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td{
+    border-bottom: 0px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr:first-of-type > th{
+    border-top: 0px;
+}
+
+.panel-table .panel-footer .pagination{
+    margin:0;
+}
+
+/*
+used to vertically center elements, may need modification if you're not using default sizes.
+*/
+.panel-table .panel-footer .col{
+    line-height: 34px;
+    height: 34px;
+}
+
+.panel-table .panel-heading .col h3{
+    line-height: 30px;
+    height: 30px;
+}
+
+.panel-table .panel-body .table-bordered > tbody > tr > td{
+    line-height: 34px;
+}
+
+#error{
+    color: red;
+}
+
+.taskTable{
+    margin-bottom: 10px;
+}
+
+.taskTable td{
+    padding: 5px 10px 0 0;
+}
+
+.navigation .fa{
+    margin-right: 2px;
+}
+
+.wrapper{
+    width: 100%;
+    text-align: center;
+}
+
+.floatLeft{
+    float:left;
+}
+
+.homeImages{
+    width: 800px;
+}
